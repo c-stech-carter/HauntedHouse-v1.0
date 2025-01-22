@@ -5,7 +5,7 @@
 **Course:** CSCI 1112 at STECH
 
 ## Overview
-This project is a game developed as a final project for CSCI 1112, utilizing Java and Open JavaFX. It simulates exploring a haunted house using pixel art-style graphics, where players must navigate through different rooms of the haunted house.
+This project is a game developed as a final project for CSCI 1112, utilizing Java and Open JavaFX. It simulates exploring a haunted house using A.I. generated pixel art-style graphics, where players must navigate through different rooms of the haunted house.
 The game in its current state is unfinished, and I plan to add many more rooms.  Currently the game does not end, but allows a free exploration of the house until the program is closed.
 
 ## Features
