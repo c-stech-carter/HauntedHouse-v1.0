@@ -8,7 +8,7 @@ A JavaFX-based exploration game where players navigate a series of ambient, pixe
 | First 'Room' of the Game | Ambient Room Layout |
 | :---: | :---: |
 | ![Exploration Baseline](Screenshot1.jpeg) | ![Interactive Interface](Screenshot2.jpeg) |
-*Note: Upload your screenshots to the root directory of this repository as 'Screenshot1.jpeg' and 'Screenshot2.jpeg' to display them here.*
+
 
 ## Project Purpose & Context
 This game was originally developed as the final project for CSCI 1112 at STECH[cite: 2, 3]. It was built to demonstrate an early mastery of core Java programming concepts, object-oriented structure, user interface creation using Open JavaFX, and multimedia playback integration[cite: 2].
