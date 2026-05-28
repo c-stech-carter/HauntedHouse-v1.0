@@ -55,8 +55,8 @@ A pre-compiled runnable archive is included directly in the root directory. Due 
 
 ## The Development Timeline
 To see how this core prototype was subsequently expanded, optimized, and modernized, visit the later versions in this progression index:
-* The Next Milestone: [HauntedHouse-v2.0](https://github.com/your-username/HauntedHouse-v2.0) - Introduces centralized GameWindow staging, a context-aware mouse menu pipeline, interactive room searching, and an encapsulated inventory tracking system.
-* The Final Production Build: [HauntedHouse-Release](https://github.com/your-username/HauntedHouse-Release) - Features complete project modernization with Gradle build automation, secure classpath resource mapping, and an optimized standalone bundle configuration.
+* The Next Milestone: [HauntedHouse-v2.0](https://github.com/c-stech-carter/HauntedHouse-v2.0) - Introduces centralized GameWindow staging, a context-aware mouse menu pipeline, interactive room searching, and an encapsulated inventory tracking system.
+* The Final Production Build: [HauntedHouse-Release](https://github.com/c-stech-carter/HauntedHouse-Release) - Features complete project modernization with Gradle build automation, secure classpath resource mapping, and an optimized standalone bundle configuration.
 
 ***
 
