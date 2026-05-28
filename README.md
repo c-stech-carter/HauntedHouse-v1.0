@@ -1,79 +1,63 @@
-# Haunted House Game
+# Haunted House Project - Version 1.0.0 (Archival Repository)
 
-**Author:** Charles T. Carter  
-**Date:** 11/14/2024  
-**Course:** CSCI 1112 at STECH
+Welcome to the historical v1.0.0 repository of the Haunted House Project. This standalone repository serves as the absolute baseline build of the project, preserved exactly in its original state to document the initial logic layout, mechanics, and design milestones before subsequent major refactors[cite: 2].
 
-## Overview
-This project is a game developed as a final project for CSCI 1112, utilizing Java and Open JavaFX. It simulates exploring a haunted house using A.I. generated pixel art-style graphics, where players must navigate through different rooms of the haunted house.
-The game in its current state is unfinished, and I plan to add many more rooms.  Currently the game does not end, but allows a free exploration of the house until the program is closed.
+A JavaFX-based exploration game where players navigate a series of ambient, pixel-art rooms in a mysterious mansion, experiencing script-triggered events and animations[cite: 2].
 
-## Features
-- **Room Exploration:** Players can explore multiple rooms, each with unique descriptions and visuals.
-- **Exits and Navigation:** Rooms have designated exits that lead to other rooms, accessible through a user interface.
-- **Animations:** The game uses fade transitions for visuals like room changes and ghost appearances.
-- **Background Music:** Continuous background music that loops indefinitely to enhance the atmosphere.   The current .mp3 came from pixabay.com, I'm still looking for the perfect soundtrack for this.
+## Screenshots
+| First 'Room' of the Game | Ambient Room Layout |
+| :---: | :---: |
+| ![Exploration Baseline](Screenshot1.jpeg) | ![Interactive Interface](Screenshot2.jpeg) |
+*Note: Upload your screenshots to the root directory of this repository as 'Screenshot1.jpeg' and 'Screenshot2.jpeg' to display them here.*
 
-## Technologies Used
-- **Java 17**: Core programming language.
-- **JavaFX**: Used for building the user interface and for multimedia support.
-  - **Controls Module**: For UI components like labels, combo boxes, and text areas.
-  - **Media Module**: For playing background music.
-- **IDE**: Developed using IntelliJ IDEA.
+## Project Purpose & Context
+This game was originally developed as the final project for CSCI 1112 at STECH[cite: 2, 3]. It was built to demonstrate an early mastery of core Java programming concepts, object-oriented structure, user interface creation using Open JavaFX, and multimedia playback integration[cite: 2].
 
-## How to Run the Project
-### Prerequisites
-- **Java 17** or later.
-- **JavaFX SDK** installed. Ensure the JavaFX libraries are added to your project's module path.
-
-### Running the Project
-1. Clone or download the project to your local machine.
-2. Make sure you have the JavaFX SDK available and correctly linked to the project.
-3. Set the following VM options to add the JavaFX module path and necessary modules:
-```--module-path "<path_to_javafx_sdk_lib>" --add-modules javafx.controls,javafx.fxml,javafx.media```
-
-### Alternatively run the .jar located in the base folder of this repository.  
-(It does not have sound)  
-Requirements:
-- Java 17 or later installed on your computer.
-- JavaFX SDK downloaded and extracted on your machine.
-####Follow these steps:
-1. Open a terminal or command prompt.
-2. Navigate to the folder where the .jar file is located.  (easily done in explorer by right-clicking in the folder and select "Open in Terminal"
-3. Run the following command, replacing pathTo\javafx-sdk-xx\lib with the actual path to the lib folder in your JavaFX SDK installation:  
-```java --module-path pathTo\javafx-sdk-xx\lib --add-modules javafx.controls,javafx.fxml -jar Haunted_Game.jar```  
-Example:  
-```java --module-path C:\javafx-sdk-23\lib --add-modules javafx.controls,javafx.fxml -jar Haunted_Game.jar```
-
-5. Run the `Main` class to start the game.
-
-## Game Instructions
-1. **Start the Game**: The game begins in the "Front Yard" of the haunted house. The player must explore to uncover more about the mysterious house.
-2. **Navigate Rooms**: Use the exit combo box at the bottom of the screen to choose an available exit to the next room.
-3. **Read Room Descriptions**: Each room has a detailed description that updates the story text area to help you understand your surroundings.
-4. **Special Events**: Certain rooms contain special animations, like flickering lights or ghost appearances.
-
-## Project Structure
-- **Main.java**: The main entry point for the game. It sets up the UI and handles user interactions.
-- **Room.java**: Defines the properties of each room, including name, description, image path, and exits.
-- **resources/**
-- **images/**: Contains the pixel art images for each room.
-- **media/**: Contains background music (`Music.mp3`) to set the mood.
-
-## Media Playback Issues
-If you encounter issues with media playback:
-- Ensure the MP3 file is in the correct location (`src/resources/audio/Music.mp3`).
-- Make sure the VM options are correctly set to include the `javafx.media` module.
-- Verify that your JavaFX SDK version matches your JDK version.
-
-## Possible Future Enhancements
-- **Interactive Objects**: Add clickable objects in each room for more interaction.
-- **Inventory System**: Allow players to pick up and use items found throughout the house.
-- **Expanded Story**: Add more rooms and richer storylines to deepen the game experience.
-
-
-Enjoy exploring the haunted house!
+In this initial phase, the game is structured as an open-ended exploration engine; it does not feature an ending or win condition, allowing continuous navigation through the house until the window is closed[cite: 2].
 
 ---
 
-If you have any questions or encounter any issues, feel free to reach out or contribute to the project.
+## Features & Visual Design
+* Atmospheric Pixel Art: Visual designs use AI-generated pixel art environments to establish a retro, immersive horror setting[cite: 2].
+* Bottom UI Navigation: Room exits are populated dynamically using a ComboBox tracking component pinned to the bottom of the interface[cite: 3].
+* Dynamic Media Streaming: Features native audio looping logic powered by the javafx.media module to maintain a continuous background soundtrack[cite: 2, 3].
+* Scripted FX Animations: Employs synchronized JavaFX FadeTransition animations, including a localized light-flickering routine in the Kitchen and independent opacity-scaled ghost spawns in the Washroom and Upstairs Loft[cite: 3].
+
+---
+
+## Project Structure (At a Glance)
+* Main.java: The main application entry point that initializes the primary stage, constructs the UI node hierarchy, coordinates room updates, and drives event triggers[cite: 2, 3].
+* Room.java: A clean, encapsulated data model that defines explicit structural values for each environment, tracking its name, description text, image resource location, and selectable exit routes[cite: 2, 4].
+
+---
+
+## Archival Installation & Execution Notes
+
+### Prerequisites
+* Java 17 or higher[cite: 2].
+* JavaFX SDK configured on your system modules path[cite: 2].
+
+### Option 1: Running via an IDE
+1. Clone this baseline repository:
+   git clone https://github.com/your-username/HauntedHouse-v1.0.git
+2. Open the directory as a project in an IDE (such as IntelliJ IDEA or VS Code)[cite: 2].
+3. Add the following VM arguments to link the JavaFX SDK controls and media dependencies during compilation[cite: 2]:
+   --module-path "<path_to_javafx_sdk_lib>" --add-modules javafx.controls,javafx.fxml,javafx.media
+4. Compile and run Main.java[cite: 2, 3].
+
+### Option 2: Running the Built JAR
+A pre-compiled runnable archive is included directly in the root directory[cite: 2]. Due to classpath adjustments in this early milestone build, audio playback is disabled during JAR execution[cite: 2].
+1. Open a terminal and navigate to the repository directory[cite: 2].
+2. Execute the JAR by targeting your local JavaFX directory path[cite: 2]:
+   java --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls,javafx.fxml -jar Haunted_Game.jar
+
+---
+
+## The Development Timeline
+To see how this core prototype was subsequently expanded, optimized, and modernized, visit the later versions in this progression index:
+* The Next Milestone: [HauntedHouse-v2.0](https://github.com/your-username/HauntedHouse-v2.0) - Introduces centralized GameWindow staging, a context-aware mouse menu pipeline, interactive room searching, and an encapsulated inventory tracking system.
+* The Final Production Build: [HauntedHouse-Release](https://github.com/your-username/HauntedHouse-Release) - Features complete project modernization with Gradle build automation, secure classpath resource mapping, and an optimized standalone bundle configuration.
+
+***
+
+### Snapshot Date: November 2024 - CSCI 1112 Milestone
